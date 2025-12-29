@@ -1,6 +1,3 @@
-﻿<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -38,18 +35,12 @@ session_start();
 <h2 style="text-align:center;">نموذج زيارة ولي أمر</h2>
 
 <form method="post">
-    <input type="text" name="parent_name" placeholder="اسم ولي الأمر" required>
-    <input type="text" name="student_name" placeholder="اسم الطالب" required>
-    <input type="text" name="phone" placeholder="رقم الهاتف" required>
-    <textarea name="reason" placeholder="سبب الزيارة" required></textarea>
+    <input type="text" placeholder="اسم ولي الأمر" required>
+    <input type="text" placeholder="اسم الطالب" required>
+    <input type="text" placeholder="رقم الهاتف" required>
+    <textarea placeholder="سبب الزيارة" required></textarea>
     <button type="submit">إرسال</button>
 </form>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    echo "<p style='text-align:center;color:green;'>تم إرسال النموذج بنجاح</p>";
-}
-?>
 
 </body>
 </html>
